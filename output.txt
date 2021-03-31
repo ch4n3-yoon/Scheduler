@@ -1,0 +1,411 @@
+C:\Users\ch4n3\CLionProjects\SchedulingQueues\cmake-build-debug\SchedulingQueues.exe
+[ INFO ] Process PCB1 was added to JobQueue!
+[ INFO ] Process PCB1 was added to ReadyQueue!
+JobQueue : PCB1
+ReadyQueue : PCB1
+[ INFO ] Process PCB2 was added to JobQueue!
+[ INFO ] Process PCB2 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2
+ReadyQueue : PCB1 -> PCB2
+[ INFO ] Process PCB3 was added to JobQueue!
+[ INFO ] Process PCB3 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3
+ReadyQueue : PCB1 -> PCB2 -> PCB3
+[ INFO ] Process PCB4 was added to JobQueue!
+[ INFO ] Process PCB4 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4
+[ INFO ] Process PCB5 was added to JobQueue!
+[ INFO ] Process PCB5 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5
+[ INFO ] Process PCB6 was added to JobQueue!
+[ INFO ] Process PCB6 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6
+[ INFO ] Process PCB7 was added to JobQueue!
+[ INFO ] Process PCB7 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7
+[ INFO ] Process PCB8 was added to JobQueue!
+[ INFO ] Process PCB8 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8
+[ INFO ] Process PCB9 was added to JobQueue!
+[ INFO ] Process PCB9 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9
+[ INFO ] Process PCB10 was added to JobQueue!
+[ INFO ] Process PCB10 was added to ReadyQueue!
+JobQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB1
+DeviceQueue :
+[ INFO ] CPU executed process PCB2
+ReadyQueue : PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB1 -> PCB2
+DeviceQueue :
+[ INFO ] CPU executed process PCB3
+ReadyQueue : PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB1 -> PCB2 -> PCB3
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB1 -> PCB2 -> PCB3 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB5
+ReadyQueue : PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5
+DeviceQueue :
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB8 -> PCB9 -> PCB10 -> PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+[ INFO ] I/O Interrupt occurred in the process PCB8
+ReadyQueue : PCB9 -> PCB10 -> PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7
+DeviceQueue : PCB8
+[ INFO ] I/O Instruction of process PCB8 is ended !
+[ INFO ] CPU executed process PCB9
+ReadyQueue : PCB10 -> PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9
+DeviceQueue :
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB1 -> PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+[ INFO ] I/O Interrupt occurred in the process PCB1
+ReadyQueue : PCB2 -> PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10
+DeviceQueue : PCB1
+[ INFO ] CPU executed process PCB2
+ReadyQueue : PCB3 -> PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB2
+DeviceQueue : PCB1
+[ INFO ] I/O Instruction of process PCB1 is ended !
+[ INFO ] CPU executed process PCB3
+ReadyQueue : PCB4 -> PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB2 -> PCB1 -> PCB3
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+[ INFO ] I/O Interrupt occurred in the process PCB4
+ReadyQueue : PCB5 -> PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB2 -> PCB1 -> PCB3
+DeviceQueue : PCB4
+[ INFO ] I/O Instruction of process PCB4 is ended !
+[ INFO ] CPU executed process PCB5
+[ INFO ] I/O Interrupt occurred in the process PCB5
+ReadyQueue : PCB6 -> PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB2 -> PCB1 -> PCB3 -> PCB4
+DeviceQueue : PCB5
+[ INFO ] I/O Instruction of process PCB5 is ended !
+[ INFO ] CPU executed process PCB6
+[ INFO ] I/O Interrupt occurred in the process PCB6
+ReadyQueue : PCB7 -> PCB8 -> PCB9 -> PCB10 -> PCB2 -> PCB1 -> PCB3 -> PCB4 -> PCB5
+DeviceQueue : PCB6
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB8 -> PCB9 -> PCB10 -> PCB2 -> PCB1 -> PCB3 -> PCB4 -> PCB5 -> PCB7
+DeviceQueue : PCB6
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB9 -> PCB10 -> PCB2 -> PCB1 -> PCB3 -> PCB4 -> PCB5 -> PCB7 -> PCB8
+DeviceQueue : PCB6
+[ INFO ] I/O Instruction of process PCB6 is ended !
+[ INFO ] CPU executed process PCB9
+[ INFO ] I/O Interrupt occurred in the process PCB9
+ReadyQueue : PCB10 -> PCB2 -> PCB1 -> PCB3 -> PCB4 -> PCB5 -> PCB7 -> PCB8 -> PCB6
+DeviceQueue : PCB9
+[ INFO ] I/O Instruction of process PCB9 is ended !
+[ INFO ] CPU executed process PCB10
+[ INFO ] I/O Interrupt occurred in the process PCB10
+ReadyQueue : PCB2 -> PCB1 -> PCB3 -> PCB4 -> PCB5 -> PCB7 -> PCB8 -> PCB6 -> PCB9
+DeviceQueue : PCB10
+[ INFO ] I/O Instruction of process PCB10 is ended !
+[ INFO ] CPU executed process PCB2
+[ INFO ] Process PCB2 was ended !
+ReadyQueue : PCB1 -> PCB3 -> PCB4 -> PCB5 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+[ INFO ] I/O Interrupt occurred in the process PCB1
+ReadyQueue : PCB3 -> PCB4 -> PCB5 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10
+DeviceQueue : PCB1
+[ INFO ] CPU executed process PCB3
+ReadyQueue : PCB4 -> PCB5 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3
+DeviceQueue : PCB1
+[ INFO ] I/O Instruction of process PCB1 is ended !
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB5 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3 -> PCB1 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB5
+[ INFO ] Process PCB5 was ended !
+ReadyQueue : PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3 -> PCB1 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+[ INFO ] I/O Interrupt occurred in the process PCB7
+ReadyQueue : PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3 -> PCB1 -> PCB4
+DeviceQueue : PCB7
+[ INFO ] I/O Instruction of process PCB7 is ended !
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB6 -> PCB9 -> PCB10 -> PCB3 -> PCB1 -> PCB4 -> PCB7 -> PCB8
+DeviceQueue :
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB9 -> PCB10 -> PCB3 -> PCB1 -> PCB4 -> PCB7 -> PCB8 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB9
+ReadyQueue : PCB10 -> PCB3 -> PCB1 -> PCB4 -> PCB7 -> PCB8 -> PCB6 -> PCB9
+DeviceQueue :
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB3 -> PCB1 -> PCB4 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB3
+ReadyQueue : PCB1 -> PCB4 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+[ INFO ] I/O Interrupt occurred in the process PCB1
+ReadyQueue : PCB4 -> PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3
+DeviceQueue : PCB1
+[ INFO ] CPU executed process PCB4
+[ INFO ] I/O Interrupt occurred in the process PCB4
+ReadyQueue : PCB7 -> PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3
+DeviceQueue : PCB1 -> PCB4
+[ INFO ] CPU executed process PCB7
+[ INFO ] I/O Interrupt occurred in the process PCB7
+ReadyQueue : PCB8 -> PCB6 -> PCB9 -> PCB10 -> PCB3
+DeviceQueue : PCB1 -> PCB4 -> PCB7
+[ INFO ] I/O Instruction of process PCB1 is ended !
+[ INFO ] CPU executed process PCB8
+[ INFO ] I/O Interrupt occurred in the process PCB8
+ReadyQueue : PCB6 -> PCB9 -> PCB10 -> PCB3 -> PCB1
+DeviceQueue : PCB4 -> PCB7 -> PCB8
+[ INFO ] I/O Instruction of process PCB4 is ended !
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB9 -> PCB10 -> PCB3 -> PCB1 -> PCB4 -> PCB6
+DeviceQueue : PCB7 -> PCB8
+[ INFO ] I/O Instruction of process PCB7 is ended !
+[ INFO ] CPU executed process PCB9
+[ INFO ] Process PCB9 was ended !
+ReadyQueue : PCB10 -> PCB3 -> PCB1 -> PCB4 -> PCB6 -> PCB7
+DeviceQueue : PCB8
+[ INFO ] I/O Instruction of process PCB8 is ended !
+[ INFO ] CPU executed process PCB10
+[ INFO ] I/O Interrupt occurred in the process PCB10
+ReadyQueue : PCB3 -> PCB1 -> PCB4 -> PCB6 -> PCB7 -> PCB8
+DeviceQueue : PCB10
+[ INFO ] CPU executed process PCB3
+[ INFO ] I/O Interrupt occurred in the process PCB3
+ReadyQueue : PCB1 -> PCB4 -> PCB6 -> PCB7 -> PCB8
+DeviceQueue : PCB10 -> PCB3
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB4 -> PCB6 -> PCB7 -> PCB8 -> PCB1
+DeviceQueue : PCB10 -> PCB3
+[ INFO ] I/O Instruction of process PCB10 is ended !
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4
+DeviceQueue : PCB3
+[ INFO ] I/O Instruction of process PCB3 is ended !
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4 -> PCB3 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB8 -> PCB1 -> PCB10 -> PCB4 -> PCB3 -> PCB6 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+[ INFO ] I/O Interrupt occurred in the process PCB8
+ReadyQueue : PCB1 -> PCB10 -> PCB4 -> PCB3 -> PCB6 -> PCB7
+DeviceQueue : PCB8
+[ INFO ] I/O Instruction of process PCB8 is ended !
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB10 -> PCB4 -> PCB3 -> PCB6 -> PCB7 -> PCB8 -> PCB1
+DeviceQueue :
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB4 -> PCB3 -> PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB3 -> PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB3
+[ INFO ] I/O Interrupt occurred in the process PCB3
+ReadyQueue : PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4
+DeviceQueue : PCB3
+[ INFO ] I/O Instruction of process PCB3 is ended !
+[ INFO ] CPU executed process PCB6
+[ INFO ] I/O Interrupt occurred in the process PCB6
+ReadyQueue : PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4 -> PCB3
+DeviceQueue : PCB6
+[ INFO ] I/O Instruction of process PCB6 is ended !
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB8 -> PCB1 -> PCB10 -> PCB4 -> PCB3 -> PCB6 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB1 -> PCB10 -> PCB4 -> PCB3 -> PCB6 -> PCB7 -> PCB8
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB10 -> PCB4 -> PCB3 -> PCB6 -> PCB7 -> PCB8 -> PCB1
+DeviceQueue :
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB4 -> PCB3 -> PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB3 -> PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB3
+[ INFO ] Process PCB3 was ended !
+ReadyQueue : PCB6 -> PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB7 -> PCB8 -> PCB1 -> PCB10 -> PCB4 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+[ INFO ] I/O Interrupt occurred in the process PCB7
+ReadyQueue : PCB8 -> PCB1 -> PCB10 -> PCB4 -> PCB6
+DeviceQueue : PCB7
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB1 -> PCB10 -> PCB4 -> PCB6 -> PCB8
+DeviceQueue : PCB7
+[ INFO ] I/O Instruction of process PCB7 is ended !
+[ INFO ] CPU executed process PCB1
+[ INFO ] I/O Interrupt occurred in the process PCB1
+ReadyQueue : PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue : PCB1
+[ INFO ] I/O Instruction of process PCB1 is ended !
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB4 -> PCB6 -> PCB8 -> PCB7 -> PCB1 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB6 -> PCB8 -> PCB7 -> PCB1 -> PCB10 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB8 -> PCB7 -> PCB1 -> PCB10 -> PCB4 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+[ INFO ] I/O Interrupt occurred in the process PCB8
+ReadyQueue : PCB7 -> PCB1 -> PCB10 -> PCB4 -> PCB6
+DeviceQueue : PCB8
+[ INFO ] I/O Instruction of process PCB8 is ended !
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB1 -> PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7 -> PCB1
+DeviceQueue :
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB4 -> PCB6 -> PCB8 -> PCB7 -> PCB1 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+[ INFO ] I/O Interrupt occurred in the process PCB4
+ReadyQueue : PCB6 -> PCB8 -> PCB7 -> PCB1 -> PCB10
+DeviceQueue : PCB4
+[ INFO ] I/O Instruction of process PCB4 is ended !
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB8 -> PCB7 -> PCB1 -> PCB10 -> PCB4 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB7 -> PCB1 -> PCB10 -> PCB4 -> PCB6 -> PCB8
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB1 -> PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+[ INFO ] I/O Interrupt occurred in the process PCB1
+ReadyQueue : PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue : PCB1
+[ INFO ] I/O Instruction of process PCB1 is ended !
+[ INFO ] CPU executed process PCB10
+ReadyQueue : PCB4 -> PCB6 -> PCB8 -> PCB7 -> PCB1 -> PCB10
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+[ INFO ] I/O Interrupt occurred in the process PCB4
+ReadyQueue : PCB6 -> PCB8 -> PCB7 -> PCB1 -> PCB10
+DeviceQueue : PCB4
+[ INFO ] I/O Instruction of process PCB4 is ended !
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB8 -> PCB7 -> PCB1 -> PCB10 -> PCB4 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB7 -> PCB1 -> PCB10 -> PCB4 -> PCB6 -> PCB8
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB1 -> PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+[ INFO ] I/O Interrupt occurred in the process PCB1
+ReadyQueue : PCB10 -> PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue : PCB1
+[ INFO ] CPU executed process PCB10
+[ INFO ] I/O Interrupt occurred in the process PCB10
+ReadyQueue : PCB4 -> PCB6 -> PCB8 -> PCB7
+DeviceQueue : PCB1 -> PCB10
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB6 -> PCB8 -> PCB7 -> PCB4
+DeviceQueue : PCB1 -> PCB10
+[ INFO ] CPU executed process PCB6
+[ INFO ] I/O Interrupt occurred in the process PCB6
+ReadyQueue : PCB8 -> PCB7 -> PCB4
+DeviceQueue : PCB1 -> PCB10 -> PCB6
+[ INFO ] CPU executed process PCB8
+[ INFO ] I/O Interrupt occurred in the process PCB8
+ReadyQueue : PCB7 -> PCB4
+DeviceQueue : PCB1 -> PCB10 -> PCB6 -> PCB8
+[ INFO ] I/O Instruction of process PCB1 is ended !
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB4 -> PCB1 -> PCB7
+DeviceQueue : PCB10 -> PCB6 -> PCB8
+[ INFO ] CPU executed process PCB4
+[ INFO ] I/O Interrupt occurred in the process PCB4
+ReadyQueue : PCB1 -> PCB7
+DeviceQueue : PCB10 -> PCB6 -> PCB8 -> PCB4
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB7 -> PCB1
+DeviceQueue : PCB10 -> PCB6 -> PCB8 -> PCB4
+[ INFO ] CPU executed process PCB7
+[ INFO ] I/O Interrupt occurred in the process PCB7
+ReadyQueue : PCB1
+DeviceQueue : PCB10 -> PCB6 -> PCB8 -> PCB4 -> PCB7
+[ INFO ] I/O Instruction of process PCB10 is ended !
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB10 -> PCB1
+DeviceQueue : PCB6 -> PCB8 -> PCB4 -> PCB7
+[ INFO ] CPU executed process PCB10
+[ INFO ] I/O Interrupt occurred in the process PCB10
+ReadyQueue : PCB1
+DeviceQueue : PCB6 -> PCB8 -> PCB4 -> PCB7 -> PCB10
+[ INFO ] I/O Instruction of process PCB6 is ended !
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB6 -> PCB1
+DeviceQueue : PCB8 -> PCB4 -> PCB7 -> PCB10
+[ INFO ] I/O Instruction of process PCB8 is ended !
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB1 -> PCB8 -> PCB6
+DeviceQueue : PCB4 -> PCB7 -> PCB10
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB8 -> PCB6 -> PCB1
+DeviceQueue : PCB4 -> PCB7 -> PCB10
+[ INFO ] I/O Instruction of process PCB4 is ended !
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB6 -> PCB1 -> PCB4 -> PCB8
+DeviceQueue : PCB7 -> PCB10
+[ INFO ] I/O Instruction of process PCB7 is ended !
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB1 -> PCB4 -> PCB8 -> PCB7 -> PCB6
+DeviceQueue : PCB10
+[ INFO ] I/O Instruction of process PCB10 is ended !
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB4 -> PCB8 -> PCB7 -> PCB6 -> PCB10 -> PCB1
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+ReadyQueue : PCB8 -> PCB7 -> PCB6 -> PCB10 -> PCB1 -> PCB4
+DeviceQueue :
+[ INFO ] CPU executed process PCB8
+ReadyQueue : PCB7 -> PCB6 -> PCB10 -> PCB1 -> PCB4 -> PCB8
+DeviceQueue :
+[ INFO ] CPU executed process PCB7
+ReadyQueue : PCB6 -> PCB10 -> PCB1 -> PCB4 -> PCB8 -> PCB7
+DeviceQueue :
+[ INFO ] CPU executed process PCB6
+ReadyQueue : PCB10 -> PCB1 -> PCB4 -> PCB8 -> PCB7 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB10
+[ INFO ] Process PCB10 was ended !
+ReadyQueue : PCB1 -> PCB4 -> PCB8 -> PCB7 -> PCB6
+DeviceQueue :
+[ INFO ] CPU executed process PCB1
+ReadyQueue : PCB4 -> PCB8 -> PCB7 -> PCB6 -> PCB1
+DeviceQueue :
+[ INFO ] CPU executed process PCB4
+[ INFO ] I/O Interrupt occurred in the process PCB4
+ReadyQueue : PCB8 -> PCB7 -> PCB6 -> PCB1
+DeviceQueue : PCB4
+
+Process finished with exit code 0
