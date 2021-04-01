@@ -90,12 +90,12 @@ void* RemoveProcess(QUEUE * queue, int pid) {
                 queue->count = 0;
             }
 
-            // When Process to find is first of job queue
+                // When Process to find is first of job queue
             else if (process == queue->first) {
                 queue->first = process->next;
             }
 
-            // When process to find is last of job queue
+                // When process to find is last of job queue
             else if (process == queue->last) {
                 queue->last = process->previous;
             }
@@ -134,15 +134,18 @@ void ExecuteProcess() {
         process = GetFirstProcess(&deviceQueue);
         if (process != nullptr) {
             std::cout << "[ INFO ] I/O Instruction of process " << process->name << " is ended !" << std::endl;
+            process->state = READY;
             AddProcess(&readyQueue, process);
         }
     }
 
     process = GetFirstProcess(&readyQueue);
+    process->state = RUNNING;
     std::cout << "[ INFO ] CPU executed process " << process->name << std::endl;
 
     random = GetRandomNumber(1, 100);
     if (random % 3 == 0) {
+        process->state = WAITING;
         AddProcess( (QUEUE *)&deviceQueue, process );
         std::cout << "[ INFO ] I/O Interrupt occurred in the process " << process->name << std::endl;
         return;
@@ -150,9 +153,11 @@ void ExecuteProcess() {
 
     random = GetRandomNumber(1, 100);
     if (random % 10 == 0){
+        process->state = TERMINATED;
         std::cout << "[ INFO ] Process " << process->name << " was ended !" << std::endl;
         return;
     } else {
+        process->state = READY;
         AddProcess( (QUEUE *)&readyQueue, process );
     }
 }
@@ -279,4 +284,3 @@ int main() {
     }
 
 }
-
